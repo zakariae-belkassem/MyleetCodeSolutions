@@ -1,3 +1,5 @@
+package Solved;
+
 public class N125   {
     public static boolean isPalindrome(String s) {
 

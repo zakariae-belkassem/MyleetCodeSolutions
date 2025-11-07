@@ -1,3 +1,5 @@
+package Solved;
+
 public class searchInsert {
 
         public static  int searchInsert(int[] nums, int target) {

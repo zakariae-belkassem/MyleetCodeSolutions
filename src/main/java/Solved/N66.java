@@ -1,6 +1,6 @@
-import java.util.ArrayList;
+package Solved;
+
 import java.util.Arrays;
-import java.util.Collection;
 
 public class N66 {
 
