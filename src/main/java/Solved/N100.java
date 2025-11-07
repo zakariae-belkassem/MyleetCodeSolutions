@@ -1,3 +1,5 @@
+package Solved;
+
 public class N100 {
     public static class TreeNode {
       int val;
