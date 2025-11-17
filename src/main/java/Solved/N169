@@ -1,0 +1,15 @@
+class Solution {
+  public int majorityElement(int[] nums) {
+    HashMap < Integer, Integer > res = new HashMap < > ();
+    res.put(0, 0);
+    for (int i: nums) {
+      if (res.containsKey(i)) res.put(i, res.get(i) + 1);
+      else res.put(i, 1);
+    }
+    int max = 0;
+    for (int i: res.keySet()) {
+      if (res.get(i) > res.get(max)) max = i;
+    }
+    return max;
+  }
+}
