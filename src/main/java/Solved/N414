@@ -1,0 +1,15 @@
+class Solution {
+    public int thirdMax(int[] nums) {
+        Set<Integer> Dnums = new HashSet<>();
+        for (int i : nums) {
+            Dnums.add(i);
+        }
+        nums = Dnums.stream().mapToInt(Integer::intValue).toArray();
+        Arrays.sort(nums);
+        if (nums.length > 2) {
+            return nums[nums.length - 3];
+        } else {
+            return nums[nums.length - 1];
+        }
+    }
+}
